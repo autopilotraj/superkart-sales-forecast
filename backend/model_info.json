@@ -1,0 +1,56 @@
+{
+  "model_version": "superkart-rf-v1",
+  "trained_on": "2026-11-10",
+  "model_type": "RandomForestRegressor",
+  "best_parameters": {
+    "max_depth": 10,
+    "max_features": 1.0,
+    "n_estimators": 200,
+    "min_samples_leaf": 1
+  },
+  "test_metrics": {
+    "RMSE": 290.7899,
+    "MAE": 114.6304,
+    "R-squared": 0.9261,
+    "Adj. R-squared": 0.9258,
+    "MAPE": 0.0515
+  },
+  "cv_r2_mean": 0.9305,
+  "training_rows": 6134,
+  "features": [
+    "Product_Weight",
+    "Product_Sugar_Content",
+    "Product_Allocated_Area",
+    "Product_MRP",
+    "Store_Size",
+    "Store_Location_City_Type",
+    "Store_Type",
+    "Product_Id_char",
+    "Store_Age_Years",
+    "Product_Type_Category"
+  ],
+  "sklearn_version": "1.6.1",
+  "known_store_types": [
+    "Departmental Store",
+    "Food Mart",
+    "Supermarket Type1",
+    "Supermarket Type2"
+  ],
+  "training_ranges": {
+    "Product_Weight": [
+      5.13,
+      22.0
+    ],
+    "Product_MRP": [
+      31.0,
+      266.0
+    ],
+    "Product_Allocated_Area": [
+      0.004,
+      0.298
+    ]
+  },
+  "review_store_types": [
+    "Food Mart"
+  ]
+}
